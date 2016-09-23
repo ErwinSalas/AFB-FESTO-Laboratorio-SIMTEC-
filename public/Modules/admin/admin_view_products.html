@@ -1,0 +1,30 @@
+<section class="content">
+    <p>{{adminC.hola}}</p>
+    <div class="container-fluid">
+        <div class="row clearfix">
+            <div class="" ng-repeat="product in adminC.products">
+                <!-- Basic Card -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card ">
+                        <img class="card-img-top center responsive-img" ng-src="/Modules/images/new_product.png" alt="Card image cap">
+                        <div class="header">
+                            <h2>
+                                {{product.name}}<small>Stock: {{product.stock}}</small>
+                            </h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown">
+                                    <i class="material-icons">mode_edit</i>
+                                    <i class="material-icons">info</i>
+                                    <i class="material-icons">delete</i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            {{product.description}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

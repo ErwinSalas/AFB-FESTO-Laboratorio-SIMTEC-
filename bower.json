@@ -2,7 +2,7 @@
   "name": "simtec-erp",
   "dependencies": {
     "angular": "latest",
-    "angular-route": "latest",
+    "angular-route": "*",
     "angular-materialize": "^0.2.1",
     "materialize": "^0.97.7",
     "wait-me": "*",
